@@ -7,6 +7,7 @@ var kraken = require('kraken-js'),
 
 app.configure = function configure(nconf, next) {
     // Fired when an app configures itself
+    console.log("Retrieving a value form the configuration: ", nconf.get("applicationName"));
     next(null);
 };
 
